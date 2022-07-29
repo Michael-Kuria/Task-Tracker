@@ -1,16 +1,14 @@
 import Button from './Button';
 
-const Header = (props) => {
+const Header = ({showForm, onShowForm}) => {
     return (
         <header className="header">
-            <h1>{props.title}</h1>
-            <Button color ="green" text = "Hello"/>
+            <h1>Task Tracker</h1>
+            <Button color = {showForm? 'red': 'green'} text = {showForm? 'Close' : 'Add'} onClick={onShowForm}/>
         </header>
     )
 }
 
-Header.defaultProps = {
-    title: 'Task Tracker',
-}
+
 
 export default Header;
