@@ -1,1 +1,1 @@
-Time: 50:00  - React JS Crash course
+React JS Crash course follow along
